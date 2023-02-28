@@ -20,7 +20,7 @@ class Finder(GMS):
         headless=True,
     ):
         """Create the headless information and initialize states data from csv"""
-        super().__init__(headless=headless)
+        super().__init__(search_term=search_term, headless=headless)
 
         self.search_term = search_term.replace(" ", "_")
         self.city = city

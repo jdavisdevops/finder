@@ -17,8 +17,9 @@ import time
 class GMS:
     """Google Based Frontend Selenium Process and WebDriver Managagement"""
 
-    def __init__(self, headless=True):
+    def __init__(self, search_term, headless=True):
         self.headless = headless
+        self.search_term = search_term
 
     def get_driver(self, images=False):
         """Get the driver with parameters"""
